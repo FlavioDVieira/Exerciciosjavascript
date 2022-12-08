@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/ex5.js"></script>
+    <link rel="stylesheet" href="css/estilo.css">
+    <title>Exercício 5</title>
+</head>
+
+<body onload="ocultar_resultado()">
+    <div class="container">
+        <h1>
+            Desenvolva uma página para calcular o custo para assentar piso, sabendo que o preço é de 36,00 por m². <br>
+            O programa deve ler o comprimento e a largura total do cômodo.
+        </h1>
+        <p>Digite o comprimento total do cômodo: <input type="number" name="" id="qtde_total_compri"></p>
+        <p>Digite a largura total do cômodo: <input type="number" name="" id="qtde_total_larg"></p>
+        <input type="button" value="Calcular" onclick="calcular()">
+        <input type="button" value="Limpar" onclick="limpar()">
+        <hr>
+        <p id="resultado">O custo total para assentar o piso é de R$: &nbsp;<label id="custo_total"></label></p>
+        <footer>
+            <a href="index.html">Voltar</a>
+        </footer>
+    </div>    
+</body>
+</html>

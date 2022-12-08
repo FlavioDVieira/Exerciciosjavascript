@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/ex6.js"></script>
+    <link rel="stylesheet" href="css/estilo.css">
+    <title>Exercício 6</title>
+</head>
+
+<body onload="ocultar_resultado()">
+    <div class="container">
+        <h1>
+            Tendo como dados de entrada a altura e o sexo de uma pessoa a partir de uma caixa de combinação,
+            construa uma página que calcule seu peso ideal, utilizando as seguintes fórmulas: <br>
+            Para homens: (72.7*h) - 58
+            Para mulheres: (62.1*h) - 44.7 (h = altura)
+        </h1>        
+        <form>
+            <label for="qtde_altura">Insira a sua altura (Entre 1,00m e 2,50m):</label> <br>
+            <input type="number" id="qtde_altura" name="qtde_altura" step="0.01" min="1.00" max="2.50"> <br>
+            <br>
+            <label for="opca0_sexo">Sexo:</label> <br>
+            <select name="opcao_sexo" id="opcao_sexo">
+                <option value=""></option>
+                <option value="h">Masculino</option>
+                <option value="m">Feminino</option>
+            </select>
+            <br> <br> <br> <br> <br>
+            <input type="button" value="Calcular" onclick="calcular()">
+            <input type="button" value="Limpar" onclick="limpar()">
+          </form>
+        <br>
+        <p id="resultado">O seu peso ideal é de :&nbsp;<label id="resultado_peso"></label> &nbsp;quilogramas.</p>
+        <footer>
+            <a href="index.html">Voltar</a>
+        </footer>
+    </div>    
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/ex7.js"></script>
+    <link rel="stylesheet" href="css/estilo.css">
+    <title>Exercício 7</title>
+</head>
+
+<body onload="ocultar_resultado()">
+    <div class="container">
+        <h1>
+            Crie uma página que receba N valores do usuário. Crie botões para mostrar todos os valores inseridos, o maior valor e o menor valor do vetor.
+        </h1>
+        <form>
+            <label>Insira o valor numérico:</label> <br> <br>
+            <input type="number" id="qtde_vetor" name="qtde_vetor"><br> <br>
+            <input type="button" value="Exibir Todos" onclick="exibir_todos()">
+            <input type="button" value="Maior Valor" onclick="maior_valor()">
+            <input type="button" value="Menor Valor" onclick="menor_valor()">
+            <input type="button" value="Limpar" onclick="limpar()">
+            <p id="resultado"></p>
+        </form>
+        <footer>
+            <a href="index.html">Voltar</a>
+        </footer>
+    </div>    
+</body>
+</html>
